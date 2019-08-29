@@ -43,7 +43,7 @@ COINCONFIG=prx.conf
 COINHOME=/home/proxynode
 #wallet downnload and extractions commands
 DOWNLOADCOINFILES=https://github.com/ProxyNode/proxynode/releases/download/v2.1.0/prx-Linux-v2.1.0.zip
-COINFILES=Proxynode-Linux-MN-v2.1.0.zip
+COINFILES=prx-Linux-v2.1.0.zip
 #need DECOMPRESS
 DECOMPRESS='unzip'
 #rocketstrap
