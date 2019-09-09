@@ -42,8 +42,8 @@ COINCORE=.proxynode
 COINCONFIG=prx.conf
 COINHOME=/home/proxynode
 #wallet downnload and extractions commands
-DOWNLOADCOINFILES=https://github.com/ProxyNode/proxynode/releases/download/v2.0.0/Proxynode-Linux-MN-v2.0.0.zip
-COINFILES=Proxynode-Linux-MN-v2.0.0.zip
+DOWNLOADCOINFILES=https://github.com/ProxyNode/proxynode/releases/download/v2.1.0/prx-Linux-v2.1.0.zip
+COINFILES=prx-Linux-v2.1.0.zip
 #need DECOMPRESS
 DECOMPRESS='unzip'
 #rocketstrap
@@ -547,7 +547,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   nodeunit=
   Function_Start_Masternode
   nodeunit=0
-  until [[ $nodeunit = 17 ]]; do
+  until [[ $nodeunit = 18 ]]; do
   Function_Start_Masternode
   nodeunit=$[$nodeunit+1]
   done
@@ -836,7 +836,7 @@ esac
   nodeunit=
   Function_Stop_Old_Masternode
   nodeunit=0
-  until [[ $nodeunit = 17 ]]; do
+  until [[ $nodeunit = 18 ]]; do
   Function_Stop_Old_Masternode
   nodeunit=$[$nodeunit+1]
   done
@@ -851,7 +851,7 @@ esac
   nodeunit=
   Function_Stop_Masternode
   nodeunit=0
-  until [[ $nodeunit = 17 ]]; do
+  until [[ $nodeunit = 18 ]]; do
   Function_Stop_Masternode
   nodeunit=$[$nodeunit+1]
   done
@@ -951,10 +951,25 @@ esac
   echo -e "10 - Masternode Ten"
   fi
   if [ -d /home/${COINl}11 ]; then
-  echo -e "11 - Masternode Ten"
+  echo -e "11 - Masternode 11"
   fi
   if [ -d /home/${COINl}12 ]; then
-  echo -e "12 - Masternode Ten"
+  echo -e "12 - Masternode 12"
+  fi
+  if [ -d /home/${COINl}13 ]; then
+  echo -e "13 - Masternode 13"
+  fi
+  if [ -d /home/${COINl}14 ]; then
+  echo -e "14 - Masternode 14"
+  fi
+  if [ -d /home/${COINl}15 ]; then
+  echo -e "15 - Masternode 15"
+  fi
+  if [ -d /home/${COINl}16 ]; then
+  echo -e "16 - Masternode 16"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "17 - Masternode 17"
   fi
   if [ -d /home/${COINl}0 ]; then
   echo -e "10 - Masternode Zero"
@@ -995,7 +1010,23 @@ esac
     display_MN_choice ;;
     9) nodeunit=9
     display_MN_choice ;;
-    10) nodeunit=0
+    10) nodeunit=10
+    display_MN_choice ;;
+    11) nodeunit=11
+    display_MN_choice ;;
+    12) nodeunit=12
+    display_MN_choice ;;
+    13) nodeunit=13
+    display_MN_choice ;;
+    14) nodeunit=14
+    display_MN_choice ;;
+    15) nodeunit=15
+    display_MN_choice ;;
+    16) nodeunit=16
+    display_MN_choice ;;
+    17) nodeunit=17
+    display_MN_choice ;;
+    0) nodeunit=0
     display_MN_choice ;;
     b) echo -e "backing out" ;;
     B) echo -e "backing out" ;;
@@ -1048,6 +1079,16 @@ esac
     Find_All_Masternodes ;;
     12) nodeunit=12
     Find_All_Masternodes ;;
+    13) nodeunit=13
+    Find_All_Masternodes ;;
+    14) nodeunit=14
+    Find_All_Masternodes ;;
+    15) nodeunit=15
+    Find_All_Masternodes ;;
+    16) nodeunit=16
+    Find_All_Masternodes ;;
+    17) nodeunit=17
+    Find_All_Masternodes ;;
     0) nodeunit=0
     Find_All_Masternodes ;;
     b) echo -e "backing out" ;;
@@ -1064,7 +1105,7 @@ esac
   nodeunit=
   Function_Find_Masternodes
   nodeunit=0
-  until [[ $nodeunit = 13 ]]; do
+  until [[ $nodeunit = 18 ]]; do
   Function_Find_Masternodes
   nodeunit=$[$nodeunit+1]
   #if [ ${nodeunit} -eq "4" ]; then
@@ -1249,7 +1290,7 @@ esac
   wget ${DOWNLOADCOINFILES}
   ${DECOMPRESS} ${COINFILES}
   sleep 3
-  sudo mv /root/${COIN3l}/${COINDAEMON} /root/${COIN3l}/${COINDAEMONCLI} /usr/local/bin
+  sudo mv /root/Linux/${COIN3l}/${COINDAEMON} /root/Linux/${COIN3l}/${COINDAEMONCLI} /usr/local/bin
   sudo chmod 755 -R  /usr/local/bin/prx*
   #rm -rf /root/${COIN3l}
   }
@@ -1277,7 +1318,7 @@ esac
   Function_Masternode_Key_Check
   echo "server=1" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "daemon=1" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "maxconnections=256" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "maxconnections=128" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "masternode=1" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   RPCPORT=$(($COINRPCPORT+$nodeunit-1))
   echo "rpcport=${RPCPORT}" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
