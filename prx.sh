@@ -342,11 +342,26 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   if [ -d /home/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /home/${COINl}12 ]; then
-  echo -e "12 -  Masternode Elven"
+  if [ -d /home/${COINl}11 ]; then
+  echo -e "11 -  Masternode Elven"
   fi
   if [ -d /home/${COINl}12 ]; then
   echo -e "12 -  Masternode Twelve"
+  fi
+  if [ -d /home/${COINl}13 ]; then
+  echo -e "13 -  Masternode 13"
+  fi
+  if [ -d /home/${COINl}14 ]; then
+  echo -e "14 -  Masternode 14"
+  fi
+  if [ -d /home/${COINl}15 ]; then
+  echo -e "15 -  Masternode 15"
+  fi
+  if [ -d /home/${COINl}16 ]; then
+  echo -e "16 -  Masternode 16"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "17 -  Masternode 17"
   fi
   if [ -d /home/${COINl}0 ]; then
   echo -e "0 -  Masternode Zero"
@@ -717,11 +732,26 @@ esac
   if [ -d /home/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /home/${COINl}10 ]; then
+  if [ -d /home/${COINl}11 ]; then
   echo -e "11 - Masternode Eleven"
   fi
-  if [ -d /home/${COINl}10 ]; then
+  if [ -d /home/${COINl}12 ]; then
   echo -e "12 - Masternode Twelve"
+  fi
+  if [ -d /home/${COINl}13 ]; then
+  echo -e "13 - Masternode 13"
+  fi
+  if [ -d /home/${COINl}14 ]; then
+  echo -e "14 - Masternode 14"
+  fi
+  if [ -d /home/${COINl}15 ]; then
+  echo -e "15 - Masternode 15"
+  fi
+  if [ -d /home/${COINl}16 ]; then
+  echo -e "16 - Masternode 16"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "17 - Masternode 17"
   fi
   if [ -d /home/${COINl}0 ]; then
   echo -e "0 - Masternode Zero"
