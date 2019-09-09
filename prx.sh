@@ -1,4 +1,3 @@
-  
 #!/bin/bash
 #script_Version:1.1
 #This script work was created by SBurns of the Null Entry Project
