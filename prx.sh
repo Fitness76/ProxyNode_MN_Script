@@ -406,6 +406,16 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
     Function_Start_Masternode ;;
     12) nodeunit=12
     Function_Start_Masternode ;;
+    13) nodeunit=13
+    Function_Start_Masternode ;;
+    14) nodeunit=14
+    Function_Start_Masternode ;;
+    15) nodeunit=15
+    Function_Start_Masternode ;;
+    16) nodeunit=16
+    Function_Start_Masternode ;;
+    17) nodeunit=17
+    Function_Start_Masternode ;;
     a) echo -e "Launching all Mastersnodes!"
     Function_Start_All_Nodes ;;
     A) echo -e "Launching all Mastersnodes!"
@@ -537,7 +547,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   nodeunit=
   Function_Start_Masternode
   nodeunit=0
-  until [[ $nodeunit = 13 ]]; do
+  until [[ $nodeunit = 17 ]]; do
   Function_Start_Masternode
   nodeunit=$[$nodeunit+1]
   done
@@ -583,10 +593,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   if [ -d /home/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /home/${COINl}10 ]; then
+  if [ -d /home/${COINl}11 ]; then
   echo -e "11 - Masternode Eleven"
   fi
-  if [ -d /home/${COINl}10 ]; then
+  if [ -d /home/${COINl}12 ]; then
   echo -e "12 - Masternode Twelve"
   fi
   if [ -d /home/${COINl}0 ]; then
@@ -635,10 +645,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   if [ -d /home/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /home/${COINl}10 ]; then
+  if [ -d /home/${COINl}11 ]; then
   echo -e "11 - Masternode Eleven"
   fi
-  if [ -d /home/${COINl}10 ]; then
+  if [ -d /home/${COINl}12 ]; then
   echo -e "12 - Masternode Twelve"
   fi
   if [ -d /home/${COINl}0 ]; then
@@ -794,6 +804,16 @@ esac
     Function_Stop_Masternode ;;
     12) nodeunit=12
     Function_Stop_Masternode ;;
+    13) nodeunit=13
+    Function_Stop_Masternode ;;
+    14) nodeunit=14
+    Function_Stop_Masternode ;;
+    15) nodeunit=15
+    Function_Stop_Masternode ;;
+    16) nodeunit=16
+    Function_Stop_Masternode ;;
+    17) nodeunit=17
+    Function_Stop_Masternode ;;
     0) nodeunit=0
     Function_Stop_Masternode ;;
     a) echo -e "Stopping all Mastersnodes!"
@@ -816,7 +836,7 @@ esac
   nodeunit=
   Function_Stop_Old_Masternode
   nodeunit=0
-  until [[ $nodeunit = 10 ]]; do
+  until [[ $nodeunit = 17 ]]; do
   Function_Stop_Old_Masternode
   nodeunit=$[$nodeunit+1]
   done
@@ -831,7 +851,7 @@ esac
   nodeunit=
   Function_Stop_Masternode
   nodeunit=0
-  until [[ $nodeunit = 10 ]]; do
+  until [[ $nodeunit = 17 ]]; do
   Function_Stop_Masternode
   nodeunit=$[$nodeunit+1]
   done
