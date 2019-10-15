@@ -1703,7 +1703,7 @@ Function_Build_Masternode_Key_Table(){
     echo \Masternode needs to be rebuilt in order for these to take effect >> ${DPATH}${COIN3l}mnkey.tbl
     echo \#unless keys are entered in configuration directly.  >> ${DPATH}${COIN3l}mnkey.tbl
     count=0
-    until [[ $count = 13 ]]; do
+    until [[ $count = 30 ]]; do
     ${COINDAEMONCLI} -datadir=/home/${COINl}1/.${COINl} masternode genkey >> ${DPATH}${COIN3l}mnkey.tbl
     count=$[$count+1]
     done
@@ -1724,6 +1724,12 @@ Function_Read_Masternode_Key_Table(){
     PRIVK10=$(sed -n '13p' < ${DPATH}${COIN3l}mnkey.tbl)
     PRIVK11=$(sed -n '14p' < ${DPATH}${COIN3l}mnkey.tbl)
     PRIVK12=$(sed -n '15p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK13=$(sed -n '16p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK14=$(sed -n '17p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK15=$(sed -n '18p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK16=$(sed -n '19p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK17=$(sed -n '20p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK18=$(sed -n '21p' < ${DPATH}${COIN3l}mnkey.tbl)
   }
   ### End - Masternode function_Masternode_upgrade
   Function_User_Add_Check(){
