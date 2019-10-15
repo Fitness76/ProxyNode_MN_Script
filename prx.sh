@@ -1677,6 +1677,12 @@ Function_Build_IP_Table(){
   MNIP10=$(sed -n '13p' < ${DPATH}ip.tbl)
   MNIP11=$(sed -n '14p' < ${DPATH}ip.tbl)
   MNIP12=$(sed -n '15p' < ${DPATH}ip.tbl)
+  MNIP13=$(sed -n '16p' < ${DPATH}ip.tbl)
+  MNIP14=$(sed -n '17p' < ${DPATH}ip.tbl)
+  MNIP15=$(sed -n '18p' < ${DPATH}ip.tbl)
+  MNIP16=$(sed -n '19p' < ${DPATH}ip.tbl)
+  MNIP17=$(sed -n '20p' < ${DPATH}ip.tbl)
+  MNIP18=$(sed -n '21p' < ${DPATH}ip.tbl)
   }
 
   Function_Build_First_Node(){
