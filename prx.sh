@@ -1683,6 +1683,18 @@ Function_Build_IP_Table(){
   MNIP16=$(sed -n '19p' < ${DPATH}ip.tbl)
   MNIP17=$(sed -n '20p' < ${DPATH}ip.tbl)
   MNIP18=$(sed -n '21p' < ${DPATH}ip.tbl)
+  MNIP19=$(sed -n '22p' < ${DPATH}ip.tbl)
+  MNIP20=$(sed -n '23p' < ${DPATH}ip.tbl)
+  MNIP21=$(sed -n '24p' < ${DPATH}ip.tbl)
+  MNIP22=$(sed -n '25p' < ${DPATH}ip.tbl)
+  MNIP23=$(sed -n '26p' < ${DPATH}ip.tbl)
+  MNIP24=$(sed -n '27p' < ${DPATH}ip.tbl)
+  MNIP25=$(sed -n '28p' < ${DPATH}ip.tbl)
+  MNIP26=$(sed -n '29p' < ${DPATH}ip.tbl)
+  MNIP27=$(sed -n '30p' < ${DPATH}ip.tbl)
+  MNIP28=$(sed -n '31p' < ${DPATH}ip.tbl)
+  MNIP29=$(sed -n '32p' < ${DPATH}ip.tbl)
+  MNIP30=$(sed -n '33p' < ${DPATH}ip.tbl)
   }
 
   Function_Build_First_Node(){
@@ -1736,6 +1748,18 @@ Function_Read_Masternode_Key_Table(){
     PRIVK16=$(sed -n '19p' < ${DPATH}${COIN3l}mnkey.tbl)
     PRIVK17=$(sed -n '20p' < ${DPATH}${COIN3l}mnkey.tbl)
     PRIVK18=$(sed -n '21p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK19=$(sed -n '22p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK20=$(sed -n '23p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK21=$(sed -n '24p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK22=$(sed -n '25p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK23=$(sed -n '26p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK24=$(sed -n '27p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK25=$(sed -n '28p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK26=$(sed -n '29p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK27=$(sed -n '30p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK28=$(sed -n '31p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK29=$(sed -n '32p' < ${DPATH}${COIN3l}mnkey.tbl)
+    PRIVK30=$(sed -n '33p' < ${DPATH}${COIN3l}mnkey.tbl)
   }
   ### End - Masternode function_Masternode_upgrade
   Function_User_Add_Check(){
