@@ -47,7 +47,7 @@ COINFILES=prx-Linux-v2.1.0.zip
 #need DECOMPRESS
 DECOMPRESS='unzip'
 #rocketstrap
-NEBootStrap=http://nullentry.com/chain/PRX/rocketstrap.rar
+NEBootStrap=http://sync.proxynode.network/prx.zip
 AddNodeList=http://nullentry.com/chain/PRX/addnodes.tbl
 ADDNODE0=66.42.113.222:12195
 ADDNODE1=107.191.50.119:12195
@@ -1766,7 +1766,7 @@ Function_Read_Masternode_Key_Table(){
   fi
   #add check before downloading
   sudo apt-get -y install unrar
-  unrar x rocketstrap.rar /home/${COINl}1/.${COINl}
+  unzip x prx.zip /home/${COINl}1/.${COINl}
 #add hash Check
 #compare hash
   #Test_Pause
