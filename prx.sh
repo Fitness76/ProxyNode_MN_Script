@@ -1353,6 +1353,16 @@ esac
       echo "externalip=[${MNIP11}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 12 ]] ; then
       echo "externalip=[${MNIP12}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 13 ]] ; then
+      echo "externalip=[${MNIP13}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 14 ]] ; then
+      echo "externalip=[${MNIP14}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 15 ]] ; then
+      echo "externalip=[${MNIP15}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 16 ]] ; then
+      echo "externalip=[${MNIP16}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 17 ]] ; then
+      echo "externalip=[${MNIP17}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
   if [[ $nodeunit -eq 1 ]] ; then
   echo "masternodeprivkey=$PRIVK1" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
@@ -1378,6 +1388,16 @@ esac
   echo "masternodeprivkey=$PRIVK11" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 12 ]] ; then
   echo "masternodeprivkey=$PRIVK12" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 13 ]] ; then
+  echo "masternodeprivkey=$PRIVK13" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 14 ]] ; then
+  echo "masternodeprivkey=$PRIVK14" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 15 ]] ; then
+  echo "masternodeprivkey=$PRIVK15" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 16 ]] ; then
+  echo "masternodeprivkey=$PRIVK16" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 17 ]] ; then
+  echo "masternodeprivkey=$PRIVK17" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
   ###Add Nodes Updates if 1st node skip, otherwise add 1st node as add node
   if [[ $nodeunit -eq 1 ]] ; then
