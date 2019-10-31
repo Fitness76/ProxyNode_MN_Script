@@ -1363,6 +1363,32 @@ esac
       echo "externalip=[${MNIP16}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 17 ]] ; then
       echo "externalip=[${MNIP17}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 18 ]] ; then
+      echo "externalip=[${MNIP19}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 19 ]] ; then
+      echo "externalip=[${MNIP19}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 20 ]] ; then
+      echo "externalip=[${MNIP20}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 21 ]] ; then
+      echo "externalip=[${MNIP21}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 22 ]] ; then
+      echo "externalip=[${MNIP22}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 23 ]] ; then
+      echo "externalip=[${MNIP23}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 24 ]] ; then
+      echo "externalip=[${MNIP24}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 25 ]] ; then
+      echo "externalip=[${MNIP25}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 26 ]] ; then
+      echo "externalip=[${MNIP26}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 27 ]] ; then
+      echo "externalip=[${MNIP27}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 28 ]] ; then
+      echo "externalip=[${MNIP28}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 29 ]] ; then
+      echo "externalip=[${MNIP29}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    elif [[ $nodeunit -eq 30 ]] ; then
+      echo "externalip=[${MNIP30}]:$COINPORT" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
   if [[ $nodeunit -eq 1 ]] ; then
   echo "masternodeprivkey=$PRIVK1" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
@@ -1398,6 +1424,32 @@ esac
   echo "masternodeprivkey=$PRIVK16" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 17 ]] ; then
   echo "masternodeprivkey=$PRIVK17" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 18 ]] ; then
+  echo "masternodeprivkey=$PRIVK18" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 19 ]] ; then
+  echo "masternodeprivkey=$PRIVK19" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 20 ]] ; then
+  echo "masternodeprivkey=$PRIVK20" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 21 ]] ; then
+  echo "masternodeprivkey=$PRIVK21" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 22 ]] ; then
+  echo "masternodeprivkey=$PRIVK22" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 23 ]] ; then
+  echo "masternodeprivkey=$PRIVK23" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 24 ]] ; then
+  echo "masternodeprivkey=$PRIVK24" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 25 ]] ; then
+  echo "masternodeprivkey=$PRIVK25" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 26 ]] ; then
+  echo "masternodeprivkey=$PRIVK26" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 27 ]] ; then
+  echo "masternodeprivkey=$PRIVK27" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 28 ]] ; then
+  echo "masternodeprivkey=$PRIVK28" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 29 ]] ; then
+  echo "masternodeprivkey=$PRIVK29" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  elif [[ $nodeunit -eq 30 ]] ; then
+  echo "masternodeprivkey=$PRIVK30" >> /home/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
   ###Add Nodes Updates if 1st node skip, otherwise add 1st node as add node
   if [[ $nodeunit -eq 1 ]] ; then
