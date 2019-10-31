@@ -901,7 +901,7 @@ esac
   nodeunit=
   Function_Stop_Old_Masternode
   nodeunit=0
-  until [[ $nodeunit = 18 ]]; do
+  until [[ $nodeunit = 31 ]]; do
   Function_Stop_Old_Masternode
   nodeunit=$[$nodeunit+1]
   done
@@ -916,7 +916,7 @@ esac
   nodeunit=
   Function_Stop_Masternode
   nodeunit=0
-  until [[ $nodeunit = 18 ]]; do
+  until [[ $nodeunit = 31 ]]; do
   Function_Stop_Masternode
   nodeunit=$[$nodeunit+1]
   done
