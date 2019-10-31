@@ -1036,6 +1036,45 @@ esac
   if [ -d /home/${COINl}17 ]; then
   echo -e "17 - Masternode 17"
   fi
+  if [ -d /home/${COINl}18 ]; then
+  echo -e "18 -  Masternode 18"
+  fi
+  if [ -d /home/${COINl}19 ]; then
+  echo -e "19 -  Masternode 19"
+  fi
+  if [ -d /home/${COINl}20 ]; then
+  echo -e "20 -  Masternode 20"
+  fi
+  if [ -d /home/${COINl}21 ]; then
+  echo -e "21 -  Masternode 21"
+  fi
+  if [ -d /home/${COINl}22 ]; then
+  echo -e "22 -  Masternode 22"
+  fi
+  if [ -d /home/${COINl}23 ]; then
+  echo -e "23 -  Masternode 23"
+  fi
+  if [ -d /home/${COINl}24 ]; then
+  echo -e "24 -  Masternode 24"
+  fi
+  if [ -d /home/${COINl}25 ]; then
+  echo -e "25 -  Masternode 25"
+  fi
+  if [ -d /home/${COINl}26 ]; then
+  echo -e "26 -  Masternode 26"
+  fi
+  if [ -d /home/${COINl}27 ]; then
+  echo -e "27 -  Masternode 27"
+  fi
+  if [ -d /home/${COINl}28 ]; then
+  echo -e "28 -  Masternode 28"
+  fi
+  if [ -d /home/${COINl}29 ]; then
+  echo -e "29 -  Masternode 29"
+  fi
+  if [ -d /home/${COINl}30 ]; then
+  echo -e "30 -  Masternode 30"
+  fi
   if [ -d /home/${COINl}0 ]; then
   echo -e "10 - Masternode Zero"
   fi
@@ -1090,6 +1129,32 @@ esac
     16) nodeunit=16
     display_MN_choice ;;
     17) nodeunit=17
+    display_MN_choice ;;
+    18) nodeunit=18
+    display_MN_choice ;;
+    19) nodeunit=19
+    display_MN_choice ;;
+    20) nodeunit=20
+    display_MN_choice ;;
+    21) nodeunit=21
+    display_MN_choice ;;
+    22) nodeunit=22
+    display_MN_choice ;;
+    23) nodeunit=23
+    display_MN_choice ;;
+    24) nodeunit=24
+    display_MN_choice ;;
+    25) nodeunit=25
+    display_MN_choice ;;
+    26) nodeunit=26
+    display_MN_choice ;;
+    27) nodeunit=27
+    display_MN_choice ;;
+    28) nodeunit=28
+    display_MN_choice ;;
+    29) nodeunit=29
+    display_MN_choice ;;
+    30) nodeunit=30
     display_MN_choice ;;
     0) nodeunit=0
     display_MN_choice ;;
