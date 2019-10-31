@@ -363,43 +363,43 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   if [ -d /home/${COINl}17 ]; then
   echo -e "17 -  Masternode 17"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}18 ]; then
   echo -e "18 -  Masternode 18"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}19 ]; then
   echo -e "19 -  Masternode 19"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}20 ]; then
   echo -e "20 -  Masternode 20"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}21 ]; then
   echo -e "21 -  Masternode 21"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}22 ]; then
   echo -e "22 -  Masternode 22"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}23 ]; then
   echo -e "23 -  Masternode 23"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}24 ]; then
   echo -e "24 -  Masternode 24"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}25 ]; then
   echo -e "25 -  Masternode 25"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}26 ]; then
   echo -e "26 -  Masternode 26"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}27 ]; then
   echo -e "27 -  Masternode 27"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}28 ]; then
   echo -e "28 -  Masternode 28"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}29 ]; then
   echo -e "29 -  Masternode 29"
   fi
-  if [ -d /home/${COINl}17 ]; then
+  if [ -d /home/${COINl}30 ]; then
   echo -e "30 -  Masternode 30"
   fi
   if [ -d /home/${COINl}0 ]; then
