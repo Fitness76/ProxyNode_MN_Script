@@ -363,6 +363,45 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   if [ -d /home/${COINl}17 ]; then
   echo -e "17 -  Masternode 17"
   fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "18 -  Masternode 18"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "19 -  Masternode 19"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "20 -  Masternode 20"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "21 -  Masternode 21"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "22 -  Masternode 22"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "23 -  Masternode 23"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "24 -  Masternode 24"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "25 -  Masternode 25"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "26 -  Masternode 26"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "27 -  Masternode 27"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "28 -  Masternode 28"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "29 -  Masternode 29"
+  fi
+  if [ -d /home/${COINl}17 ]; then
+  echo -e "30 -  Masternode 30"
+  fi
   if [ -d /home/${COINl}0 ]; then
   echo -e "0 -  Masternode Zero"
   fi
@@ -415,6 +454,32 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
     16) nodeunit=16
     Function_Start_Masternode ;;
     17) nodeunit=17
+    Function_Start_Masternode ;;
+    18) nodeunit=18
+    Function_Start_Masternode ;;
+    19) nodeunit=19
+    Function_Start_Masternode ;;
+    20) nodeunit=20
+    Function_Start_Masternode ;;
+    21) nodeunit=21
+    Function_Start_Masternode ;;
+    22) nodeunit=22
+    Function_Start_Masternode ;;
+    23) nodeunit=23
+    Function_Start_Masternode ;;
+    24) nodeunit=24
+    Function_Start_Masternode ;;
+    25) nodeunit=25
+    Function_Start_Masternode ;;
+    26) nodeunit=26
+    Function_Start_Masternode ;;
+    27) nodeunit=27
+    Function_Start_Masternode ;;
+    28) nodeunit=28
+    Function_Start_Masternode ;;
+    29) nodeunit=29
+    Function_Start_Masternode ;;
+    30) nodeunit=30
     Function_Start_Masternode ;;
     a) echo -e "Launching all Mastersnodes!"
     Function_Start_All_Nodes ;;
@@ -547,7 +612,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   nodeunit=
   Function_Start_Masternode
   nodeunit=0
-  until [[ $nodeunit = 18 ]]; do
+  until [[ $nodeunit = 31 ]]; do
   Function_Start_Masternode
   nodeunit=$[$nodeunit+1]
   done
