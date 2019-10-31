@@ -1766,7 +1766,7 @@ Function_Read_Masternode_Key_Table(){
   fi
   #add check before downloading
   sudo apt-get -y install unrar
-  unzip x prx.zip /home/${COINl}1/.${COINl}
+  unzip prx.zip /home/${COINl}1/.${COINl}
 #add hash Check
 #compare hash
   #Test_Pause
