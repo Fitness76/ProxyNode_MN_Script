@@ -1261,7 +1261,7 @@ esac
   nodeunit=
   Function_Find_Masternodes
   nodeunit=0
-  until [[ $nodeunit = 18 ]]; do
+  until [[ $nodeunit = 31 ]]; do
   Function_Find_Masternodes
   nodeunit=$[$nodeunit+1]
   #if [ ${nodeunit} -eq "4" ]; then
