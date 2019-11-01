@@ -40,7 +40,7 @@ COINDAEMON=prxd
 COINDAEMONCLI=prx-cli
 COINCORE=.proxynode
 COINCONFIG=prx.conf
-COINHOME=/mnt/blockstorageproxynode
+COINHOME=/mnt/blockstorage/proxynode
 #wallet downnload and extractions commands
 DOWNLOADCOINFILES=https://github.com/ProxyNode/proxynode/releases/download/v2.1.0/prx-Linux-v2.1.0.zip
 COINFILES=prx-Linux-v2.1.0.zip
@@ -155,7 +155,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   }
   #start Masternode
   Function_Start_Masternode(){
-  if [ -d /mnt/blockstorage${COINl}${nodeunit} ]; then
+  if [ -d /mnt/blockstorage/${COINl}${nodeunit} ]; then
     echo -e ${GREEN}"Starting Masternode ${nodeunit}" ${CLEAR}
     echo -e "Please wait" ${YELLOW}
     ${COINDAEMON} -datadir=${COINHOME}${nodeunit}/${COINCORE} -daemon
@@ -169,7 +169,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   #stop all Old Nodes Masternode
   Function_Stop_Old_Masternode(){
     echo
-  if [ -d /mnt/blockstorage${COINl}${nodeunit} ]; then
+  if [ -d /mnt/blockstorage/${COINl}${nodeunit} ]; then
     echo -e ${GREEN}"Stopping Masternode ${nodeunit}" ${YELLOW}
     prx-cli -datadir=${COINHOME}${nodeunit}/${COINCORE} stop
     sleep 7
@@ -182,7 +182,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   #start Masternode
   Function_Stop_Masternode(){
     echo
-  if [ -d /mnt/blockstorage${COINl}${nodeunit} ]; then
+  if [ -d /mnt/blockstorage/${COINl}${nodeunit} ]; then
     echo -e ${GREEN}"Stopping Masternode ${nodeunit}" ${YELLOW}
     ${COINDAEMONCLI} -datadir=${COINHOME}${nodeunit}/${COINCORE} stop
     sleep 7
@@ -309,100 +309,100 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo "            Start Masternode(s)"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-  if [ -d /mnt/blockstorage${COINl} ]; then
+  if [ -d /mnt/blockstorage/${COINl} ]; then
   echo -e "L -  Legacy Masternode"
   fi
-  if [ -d /mnt/blockstorage${COINl}1 ]; then
+  if [ -d /mnt/blockstorage/${COINl}1 ]; then
   echo -e "1 -  Masternode One"
   fi
-  if [ -d /mnt/blockstorage${COINl}2 ]; then
+  if [ -d /mnt/blockstorage/${COINl}2 ]; then
   echo -e "2 -  Masternode Two"
   fi
-  if [ -d /mnt/blockstorage${COINl}3 ]; then
+  if [ -d /mnt/blockstorage/${COINl}3 ]; then
   echo -e "3 -  Masternode Three"
   fi
-  if [ -d /mnt/blockstorage${COINl}4 ]; then
+  if [ -d /mnt/blockstorage/${COINl}4 ]; then
   echo -e "4 -  Masternode Four"
   fi
-  if [ -d /mnt/blockstorage${COINl}5 ]; then
+  if [ -d /mnt/blockstorage/${COINl}5 ]; then
   echo -e "5 -  Masternode Five"
   fi
-  if [ -d /mnt/blockstorage${COINl}6 ]; then
+  if [ -d /mnt/blockstorage/${COINl}6 ]; then
   echo -e "6 -  Masternode Six"
   fi
-  if [ -d /mnt/blockstorage${COINl}7 ]; then
+  if [ -d /mnt/blockstorage/${COINl}7 ]; then
   echo -e "7 -  Masternode Seven"
   fi
-  if [ -d /mnt/blockstorage${COINl}8 ]; then
+  if [ -d /mnt/blockstorage/${COINl}8 ]; then
   echo -e "8 -  Masternode Eight"
   fi
-  if [ -d /mnt/blockstorage${COINl}9 ]; then
+  if [ -d /mnt/blockstorage/${COINl}9 ]; then
   echo -e "9 -  Masternode Nine"
   fi
-  if [ -d /mnt/blockstorage${COINl}10 ]; then
+  if [ -d /mnt/blockstorage/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /mnt/blockstorage${COINl}11 ]; then
+  if [ -d /mnt/blockstorage/${COINl}11 ]; then
   echo -e "11 -  Masternode Elven"
   fi
-  if [ -d /mnt/blockstorage${COINl}12 ]; then
+  if [ -d /mnt/blockstorage/${COINl}12 ]; then
   echo -e "12 -  Masternode Twelve"
   fi
-  if [ -d /mnt/blockstorage${COINl}13 ]; then
+  if [ -d /mnt/blockstorage/${COINl}13 ]; then
   echo -e "13 -  Masternode 13"
   fi
-  if [ -d /mnt/blockstorage${COINl}14 ]; then
+  if [ -d /mnt/blockstorage/${COINl}14 ]; then
   echo -e "14 -  Masternode 14"
   fi
-  if [ -d /mnt/blockstorage${COINl}15 ]; then
+  if [ -d /mnt/blockstorage/${COINl}15 ]; then
   echo -e "15 -  Masternode 15"
   fi
-  if [ -d /mnt/blockstorage${COINl}16 ]; then
+  if [ -d /mnt/blockstorage/${COINl}16 ]; then
   echo -e "16 -  Masternode 16"
   fi
-  if [ -d /mnt/blockstorage${COINl}17 ]; then
+  if [ -d /mnt/blockstorage/${COINl}17 ]; then
   echo -e "17 -  Masternode 17"
   fi
-  if [ -d /mnt/blockstorage${COINl}18 ]; then
+  if [ -d /mnt/blockstorage/${COINl}18 ]; then
   echo -e "18 -  Masternode 18"
   fi
-  if [ -d /mnt/blockstorage${COINl}19 ]; then
+  if [ -d /mnt/blockstorage/${COINl}19 ]; then
   echo -e "19 -  Masternode 19"
   fi
-  if [ -d /mnt/blockstorage${COINl}20 ]; then
+  if [ -d /mnt/blockstorage/${COINl}20 ]; then
   echo -e "20 -  Masternode 20"
   fi
-  if [ -d /mnt/blockstorage${COINl}21 ]; then
+  if [ -d /mnt/blockstorage/${COINl}21 ]; then
   echo -e "21 -  Masternode 21"
   fi
-  if [ -d /mnt/blockstorage${COINl}22 ]; then
+  if [ -d /mnt/blockstorage/${COINl}22 ]; then
   echo -e "22 -  Masternode 22"
   fi
-  if [ -d /mnt/blockstorage${COINl}23 ]; then
+  if [ -d /mnt/blockstorage/${COINl}23 ]; then
   echo -e "23 -  Masternode 23"
   fi
-  if [ -d /mnt/blockstorage${COINl}24 ]; then
+  if [ -d /mnt/blockstorage/${COINl}24 ]; then
   echo -e "24 -  Masternode 24"
   fi
-  if [ -d /mnt/blockstorage${COINl}25 ]; then
+  if [ -d /mnt/blockstorage/${COINl}25 ]; then
   echo -e "25 -  Masternode 25"
   fi
-  if [ -d /mnt/blockstorage${COINl}26 ]; then
+  if [ -d /mnt/blockstorage/${COINl}26 ]; then
   echo -e "26 -  Masternode 26"
   fi
-  if [ -d /mnt/blockstorage${COINl}27 ]; then
+  if [ -d /mnt/blockstorage/${COINl}27 ]; then
   echo -e "27 -  Masternode 27"
   fi
-  if [ -d /mnt/blockstorage${COINl}28 ]; then
+  if [ -d /mnt/blockstorage/${COINl}28 ]; then
   echo -e "28 -  Masternode 28"
   fi
-  if [ -d /mnt/blockstorage${COINl}29 ]; then
+  if [ -d /mnt/blockstorage/${COINl}29 ]; then
   echo -e "29 -  Masternode 29"
   fi
-  if [ -d /mnt/blockstorage${COINl}30 ]; then
+  if [ -d /mnt/blockstorage/${COINl}30 ]; then
   echo -e "30 -  Masternode 30"
   fi
-  if [ -d /mnt/blockstorage${COINl}0 ]; then
+  if [ -d /mnt/blockstorage/${COINl}0 ]; then
   echo -e "0 -  Masternode Zero"
   fi
   echo -e "A -  Start All ${COIN3} Masternodes"
@@ -499,46 +499,46 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo "            Re-Index Masternode(s)"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-  if [ -d /mnt/blockstorage${COINl} ]; then
+  if [ -d /mnt/blockstorage/${COINl} ]; then
   echo -e "L -  Legacy Masternode"
   fi
-  if [ -d /mnt/blockstorage${COINl}1 ]; then
+  if [ -d /mnt/blockstorage/${COINl}1 ]; then
   echo -e "1 -  Masternode One"
   fi
-  if [ -d /mnt/blockstorage${COINl}2 ]; then
+  if [ -d /mnt/blockstorage/${COINl}2 ]; then
   echo -e "2 -  Masternode Two"
   fi
-  if [ -d /mnt/blockstorage${COINl}3 ]; then
+  if [ -d /mnt/blockstorage/${COINl}3 ]; then
   echo -e "3 -  Masternode Three"
   fi
-  if [ -d /mnt/blockstorage${COINl}4 ]; then
+  if [ -d /mnt/blockstorage/${COINl}4 ]; then
   echo -e "4 -  Masternode Four"
   fi
-  if [ -d /mnt/blockstorage${COINl}5 ]; then
+  if [ -d /mnt/blockstorage/${COINl}5 ]; then
   echo -e "5 -  Masternode Five"
   fi
-  if [ -d /mnt/blockstorage${COINl}6 ]; then
+  if [ -d /mnt/blockstorage/${COINl}6 ]; then
   echo -e "6 -  Masternode Six"
   fi
-  if [ -d /mnt/blockstorage${COINl}7 ]; then
+  if [ -d /mnt/blockstorage/${COINl}7 ]; then
   echo -e "7 -  Masternode Seven"
   fi
-  if [ -d /mnt/blockstorage${COINl}8 ]; then
+  if [ -d /mnt/blockstorage/${COINl}8 ]; then
   echo -e "8 -  Masternode Eight"
   fi
-  if [ -d /mnt/blockstorage${COINl}9 ]; then
+  if [ -d /mnt/blockstorage/${COINl}9 ]; then
   echo -e "9 -  Masternode Nine"
   fi
-  if [ -d /mnt/blockstorage${COINl}10 ]; then
+  if [ -d /mnt/blockstorage/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /mnt/blockstorage${COINl}11 ]; then
+  if [ -d /mnt/blockstorage/${COINl}11 ]; then
   echo -e "11 - Masternode Eleven"
   fi
-  if [ -d /mnt/blockstorage${COINl}12 ]; then
+  if [ -d /mnt/blockstorage/${COINl}12 ]; then
   echo -e "12 - Masternode Twelve"
   fi
-  if [ -d /mnt/blockstorage${COINl}0 ]; then
+  if [ -d /mnt/blockstorage/${COINl}0 ]; then
   echo -e "0 - Masternode Zero"
   fi
   echo -e "B-   Back - Previous Menu"
@@ -594,7 +594,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   }
   #End read Start Masternodes Menu
   function_reindex_masternode(){
-  if [ -d /mnt/blockstorage${COINl}${nodeunit} ]; then
+  if [ -d /mnt/blockstorage/${COINl}${nodeunit} ]; then
   Function_Stop_Masternode
   echo -e ${GREEN}"Attempting Re-Indexing of Masternode ${nodeunit}" ${CLEAR}
   echo -e "Please wait" ${YELLOW}
@@ -625,46 +625,46 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo "      Edit Masternode Configuration"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-  if [ -d /mnt/blockstorage${COINl} ]; then
+  if [ -d /mnt/blockstorage/${COINl} ]; then
   echo -e "L - Legacy Masternode One Status"
   fi
-  if [ -d /mnt/blockstorage${COINl}1 ]; then
+  if [ -d /mnt/blockstorage/${COINl}1 ]; then
   echo -e "1 - Masternode One"
   fi
-  if [ -d /mnt/blockstorage${COINl}2 ]; then
+  if [ -d /mnt/blockstorage/${COINl}2 ]; then
   echo -e "2 - Masternode Two"
   fi
-  if [ -d /mnt/blockstorage${COINl}3 ]; then
+  if [ -d /mnt/blockstorage/${COINl}3 ]; then
   echo -e "3 - Masternode Three"
   fi
-  if [ -d /mnt/blockstorage${COINl}4 ]; then
+  if [ -d /mnt/blockstorage/${COINl}4 ]; then
   echo -e "4 - Masternode Four"
   fi
-  if [ -d /mnt/blockstorage${COINl}5 ]; then
+  if [ -d /mnt/blockstorage/${COINl}5 ]; then
   echo -e "5 - Masternode Five"
   fi
-  if [ -d /mnt/blockstorage${COINl}6 ]; then
+  if [ -d /mnt/blockstorage/${COINl}6 ]; then
   echo -e "6 - Masternode Six"
   fi
-  if [ -d /mnt/blockstorage${COINl}7 ]; then
+  if [ -d /mnt/blockstorage/${COINl}7 ]; then
   echo -e "7 - Masternode Seven"
   fi
-  if [ -d /mnt/blockstorage${COINl}8 ]; then
+  if [ -d /mnt/blockstorage/${COINl}8 ]; then
   echo -e "8 - Masternode Eight"
   fi
-  if [ -d /mnt/blockstorage${COINl}9 ]; then
+  if [ -d /mnt/blockstorage/${COINl}9 ]; then
   echo -e "9 - Masternode Nine"
   fi
-  if [ -d /mnt/blockstorage${COINl}10 ]; then
+  if [ -d /mnt/blockstorage/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /mnt/blockstorage${COINl}11 ]; then
+  if [ -d /mnt/blockstorage/${COINl}11 ]; then
   echo -e "11 - Masternode Eleven"
   fi
-  if [ -d /mnt/blockstorage${COINl}12 ]; then
+  if [ -d /mnt/blockstorage/${COINl}12 ]; then
   echo -e "12 - Masternode Twelve"
   fi
-  if [ -d /mnt/blockstorage${COINl}0 ]; then
+  if [ -d /mnt/blockstorage/${COINl}0 ]; then
   echo -e "0 - Masternode Zero"
   fi
   echo -e "B - Back out of Menu"
@@ -677,46 +677,46 @@ bash <(curl -Ls https://raw.githubusercontent.com/sburns1369/ProxyNode_MN_Script
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo "      View Masternode Configuration"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-  if [ -d /mnt/blockstorage${COINl} ]; then
+  if [ -d /mnt/blockstorage/${COINl} ]; then
   echo -e "L - Legacy Masternode One Status"
   fi
-  if [ -d /mnt/blockstorage${COINl}1 ]; then
+  if [ -d /mnt/blockstorage/${COINl}1 ]; then
   echo -e "1 - Masternode One"
   fi
-  if [ -d /mnt/blockstorage${COINl}2 ]; then
+  if [ -d /mnt/blockstorage/${COINl}2 ]; then
   echo -e "2 - Masternode Two"
   fi
-  if [ -d /mnt/blockstorage${COINl}3 ]; then
+  if [ -d /mnt/blockstorage/${COINl}3 ]; then
   echo -e "3 - Masternode Three"
   fi
-  if [ -d /mnt/blockstorage${COINl}4 ]; then
+  if [ -d /mnt/blockstorage/${COINl}4 ]; then
   echo -e "4 - Masternode Four"
   fi
-  if [ -d /mnt/blockstorage${COINl}5 ]; then
+  if [ -d /mnt/blockstorage/${COINl}5 ]; then
   echo -e "5 - Masternode Five"
   fi
-  if [ -d /mnt/blockstorage${COINl}6 ]; then
+  if [ -d /mnt/blockstorage/${COINl}6 ]; then
   echo -e "6 - Masternode Six"
   fi
-  if [ -d /mnt/blockstorage${COINl}7 ]; then
+  if [ -d /mnt/blockstorage/${COINl}7 ]; then
   echo -e "7 - Masternode Seven"
   fi
-  if [ -d /mnt/blockstorage${COINl}8 ]; then
+  if [ -d /mnt/blockstorage/${COINl}8 ]; then
   echo -e "8 - Masternode Eight"
   fi
-  if [ -d /mnt/blockstorage${COINl}9 ]; then
+  if [ -d /mnt/blockstorage/${COINl}9 ]; then
   echo -e "9 - Masternode Nine"
   fi
-  if [ -d /mnt/blockstorage${COINl}10 ]; then
+  if [ -d /mnt/blockstorage/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /mnt/blockstorage${COINl}11 ]; then
+  if [ -d /mnt/blockstorage/${COINl}11 ]; then
   echo -e "11 - Masternode Eleven"
   fi
-  if [ -d /mnt/blockstorage${COINl}12 ]; then
+  if [ -d /mnt/blockstorage/${COINl}12 ]; then
   echo -e "12 - Masternode Twelve"
   fi
-  if [ -d /mnt/blockstorage${COINl}0 ]; then
+  if [ -d /mnt/blockstorage/${COINl}0 ]; then
   echo -e "0 - Masternode Zero"
   fi
   echo -e "B - Back out of Menu"
@@ -774,61 +774,61 @@ esac
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo "          Stop Masternode(s)"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-  if [ -d /mnt/blockstorage${COINl} ]; then
+  if [ -d /mnt/blockstorage/${COINl} ]; then
   echo -e "L - Legacy Masternode One Status"
   fi
-  if [ -d /mnt/blockstorage${COINl}1 ]; then
+  if [ -d /mnt/blockstorage/${COINl}1 ]; then
   echo -e "1 - Masternode One"
   fi
-  if [ -d /mnt/blockstorage${COINl}2 ]; then
+  if [ -d /mnt/blockstorage/${COINl}2 ]; then
   echo -e "2 - Masternode Two"
   fi
-  if [ -d /mnt/blockstorage${COINl}3 ]; then
+  if [ -d /mnt/blockstorage/${COINl}3 ]; then
   echo -e "3 - Masternode Three"
   fi
-  if [ -d /mnt/blockstorage${COINl}4 ]; then
+  if [ -d /mnt/blockstorage/${COINl}4 ]; then
   echo -e "4 - Masternode Four"
   fi
-  if [ -d /mnt/blockstorage${COINl}5 ]; then
+  if [ -d /mnt/blockstorage/${COINl}5 ]; then
   echo -e "5 - Masternode Five"
   fi
-  if [ -d /mnt/blockstorage${COINl}6 ]; then
+  if [ -d /mnt/blockstorage/${COINl}6 ]; then
   echo -e "6 - Masternode Six"
   fi
-  if [ -d /mnt/blockstorage${COINl}7 ]; then
+  if [ -d /mnt/blockstorage/${COINl}7 ]; then
   echo -e "7 - Masternode Seven"
   fi
-  if [ -d /mnt/blockstorage${COINl}8 ]; then
+  if [ -d /mnt/blockstorage/${COINl}8 ]; then
   echo -e "8 - Masternode Eight"
   fi
-  if [ -d /mnt/blockstorage${COINl}9 ]; then
+  if [ -d /mnt/blockstorage/${COINl}9 ]; then
   echo -e "9 - Masternode Nine"
   fi
-  if [ -d /mnt/blockstorage${COINl}10 ]; then
+  if [ -d /mnt/blockstorage/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /mnt/blockstorage${COINl}11 ]; then
+  if [ -d /mnt/blockstorage/${COINl}11 ]; then
   echo -e "11 - Masternode Eleven"
   fi
-  if [ -d /mnt/blockstorage${COINl}12 ]; then
+  if [ -d /mnt/blockstorage/${COINl}12 ]; then
   echo -e "12 - Masternode Twelve"
   fi
-  if [ -d /mnt/blockstorage${COINl}13 ]; then
+  if [ -d /mnt/blockstorage/${COINl}13 ]; then
   echo -e "13 - Masternode 13"
   fi
-  if [ -d /mnt/blockstorage${COINl}14 ]; then
+  if [ -d /mnt/blockstorage/${COINl}14 ]; then
   echo -e "14 - Masternode 14"
   fi
-  if [ -d /mnt/blockstorage${COINl}15 ]; then
+  if [ -d /mnt/blockstorage/${COINl}15 ]; then
   echo -e "15 - Masternode 15"
   fi
-  if [ -d /mnt/blockstorage${COINl}16 ]; then
+  if [ -d /mnt/blockstorage/${COINl}16 ]; then
   echo -e "16 - Masternode 16"
   fi
-  if [ -d /mnt/blockstorage${COINl}17 ]; then
+  if [ -d /mnt/blockstorage/${COINl}17 ]; then
   echo -e "17 - Masternode 17"
   fi
-  if [ -d /mnt/blockstorage${COINl}0 ]; then
+  if [ -d /mnt/blockstorage/${COINl}0 ]; then
   echo -e "0 - Masternode Zero"
   fi
   echo -e "A - stop All ${COIN3} Masternodes"
@@ -925,7 +925,7 @@ esac
   ##  end of stop ALL MN function
   #Function set for Edit MN Config Menu
   edit_menu_choice(){
-  if [ -d /mnt/blockstorage${COINl}${nodeunit} ]; then
+  if [ -d /mnt/blockstorage/${COINl}${nodeunit} ]; then
     clear
     echo -e "Stopping Masternode to Prevent Problems, please wait"
     Function_Stop_Masternode
@@ -982,100 +982,100 @@ esac
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
   echo "      Displaying Masternode Status"
   echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-  if [ -d /mnt/blockstorage${COINl} ]; then
+  if [ -d /mnt/blockstorage/${COINl} ]; then
   echo -e "L - Legacy Masternode"
   fi
-  if [ -d /mnt/blockstorage${COINl}1 ]; then
+  if [ -d /mnt/blockstorage/${COINl}1 ]; then
   echo -e "1 - Masternode One"
   fi
-  if [ -d /mnt/blockstorage${COINl}2 ]; then
+  if [ -d /mnt/blockstorage/${COINl}2 ]; then
   echo -e "2 - Masternode Two"
   fi
-  if [ -d /mnt/blockstorage${COINl}3 ]; then
+  if [ -d /mnt/blockstorage/${COINl}3 ]; then
   echo -e "3 - Masternode Three"
   fi
-  if [ -d /mnt/blockstorage${COINl}4 ]; then
+  if [ -d /mnt/blockstorage/${COINl}4 ]; then
   echo -e "4 - Masternode Four"
   fi
-  if [ -d /mnt/blockstorage${COINl}5 ]; then
+  if [ -d /mnt/blockstorage/${COINl}5 ]; then
   echo -e "5 - Masternode Five"
   fi
-  if [ -d /mnt/blockstorage${COINl}6 ]; then
+  if [ -d /mnt/blockstorage/${COINl}6 ]; then
   echo -e "6 - Masternode Six"
   fi
-  if [ -d /mnt/blockstorage${COINl}7 ]; then
+  if [ -d /mnt/blockstorage/${COINl}7 ]; then
   echo -e "7 - Masternode Seven"
   fi
-  if [ -d /mnt/blockstorage${COINl}8 ]; then
+  if [ -d /mnt/blockstorage/${COINl}8 ]; then
   echo -e "8 - Masternode Eight"
   fi
-  if [ -d /mnt/blockstorage${COINl}9 ]; then
+  if [ -d /mnt/blockstorage/${COINl}9 ]; then
   echo -e "9 - Masternode Nine"
   fi
-  if [ -d /mnt/blockstorage${COINl}10 ]; then
+  if [ -d /mnt/blockstorage/${COINl}10 ]; then
   echo -e "10 - Masternode Ten"
   fi
-  if [ -d /mnt/blockstorage${COINl}11 ]; then
+  if [ -d /mnt/blockstorage/${COINl}11 ]; then
   echo -e "11 - Masternode 11"
   fi
-  if [ -d /mnt/blockstorage${COINl}12 ]; then
+  if [ -d /mnt/blockstorage/${COINl}12 ]; then
   echo -e "12 - Masternode 12"
   fi
-  if [ -d /mnt/blockstorage${COINl}13 ]; then
+  if [ -d /mnt/blockstorage/${COINl}13 ]; then
   echo -e "13 - Masternode 13"
   fi
-  if [ -d /mnt/blockstorage${COINl}14 ]; then
+  if [ -d /mnt/blockstorage/${COINl}14 ]; then
   echo -e "14 - Masternode 14"
   fi
-  if [ -d /mnt/blockstorage${COINl}15 ]; then
+  if [ -d /mnt/blockstorage/${COINl}15 ]; then
   echo -e "15 - Masternode 15"
   fi
-  if [ -d /mnt/blockstorage${COINl}16 ]; then
+  if [ -d /mnt/blockstorage/${COINl}16 ]; then
   echo -e "16 - Masternode 16"
   fi
-  if [ -d /mnt/blockstorage${COINl}17 ]; then
+  if [ -d /mnt/blockstorage/${COINl}17 ]; then
   echo -e "17 - Masternode 17"
   fi
-  if [ -d /mnt/blockstorage${COINl}18 ]; then
+  if [ -d /mnt/blockstorage/${COINl}18 ]; then
   echo -e "18 -  Masternode 18"
   fi
-  if [ -d /mnt/blockstorage${COINl}19 ]; then
+  if [ -d /mnt/blockstorage/${COINl}19 ]; then
   echo -e "19 -  Masternode 19"
   fi
-  if [ -d /mnt/blockstorage${COINl}20 ]; then
+  if [ -d /mnt/blockstorage/${COINl}20 ]; then
   echo -e "20 -  Masternode 20"
   fi
-  if [ -d /mnt/blockstorage${COINl}21 ]; then
+  if [ -d /mnt/blockstorage/${COINl}21 ]; then
   echo -e "21 -  Masternode 21"
   fi
-  if [ -d /mnt/blockstorage${COINl}22 ]; then
+  if [ -d /mnt/blockstorage/${COINl}22 ]; then
   echo -e "22 -  Masternode 22"
   fi
-  if [ -d /mnt/blockstorage${COINl}23 ]; then
+  if [ -d /mnt/blockstorage/${COINl}23 ]; then
   echo -e "23 -  Masternode 23"
   fi
-  if [ -d /mnt/blockstorage${COINl}24 ]; then
+  if [ -d /mnt/blockstorage/${COINl}24 ]; then
   echo -e "24 -  Masternode 24"
   fi
-  if [ -d /mnt/blockstorage${COINl}25 ]; then
+  if [ -d /mnt/blockstorage/${COINl}25 ]; then
   echo -e "25 -  Masternode 25"
   fi
-  if [ -d /mnt/blockstorage${COINl}26 ]; then
+  if [ -d /mnt/blockstorage/${COINl}26 ]; then
   echo -e "26 -  Masternode 26"
   fi
-  if [ -d /mnt/blockstorage${COINl}27 ]; then
+  if [ -d /mnt/blockstorage/${COINl}27 ]; then
   echo -e "27 -  Masternode 27"
   fi
-  if [ -d /mnt/blockstorage${COINl}28 ]; then
+  if [ -d /mnt/blockstorage/${COINl}28 ]; then
   echo -e "28 -  Masternode 28"
   fi
-  if [ -d /mnt/blockstorage${COINl}29 ]; then
+  if [ -d /mnt/blockstorage/${COINl}29 ]; then
   echo -e "29 -  Masternode 29"
   fi
-  if [ -d /mnt/blockstorage${COINl}30 ]; then
+  if [ -d /mnt/blockstorage/${COINl}30 ]; then
   echo -e "30 -  Masternode 30"
   fi
-  if [ -d /mnt/blockstorage${COINl}0 ]; then
+  if [ -d /mnt/blockstorage/${COINl}0 ]; then
   echo -e "10 - Masternode Zero"
   fi
   echo -e "B - Back out of Menu"
@@ -1273,11 +1273,11 @@ esac
   # Find Masternode Test Function
   Function_Find_Masternodes(){
   local choice
-  if [ -d /mnt/blockstorage${COINl}${nodeunit} ]; then
+  if [ -d /mnt/blockstorage/${COINl}${nodeunit} ]; then
     if [ -z ${nodeunit} ]; then
-    echo -e ${GREEN}"Found PRX-Oldnode Installation Found - /mnt/blockstorage${COINl}" ${CLEAR}
+    echo -e ${GREEN}"Found PRX-Oldnode Installation Found - /mnt/blockstorage/${COINl}" ${CLEAR}
   else
-    echo -e ${GREEN}"Found PRX-${nodeunit} Installation Found - /mnt/blockstorage${COINl}${nodeunit}" ${CLEAR}
+    echo -e ${GREEN}"Found PRX-${nodeunit} Installation Found - /mnt/blockstorage/${COINl}${nodeunit}" ${CLEAR}
   fi
   ${COINDAEMONCLI} -datadir=${COINHOME}${nodeunit}/${COINCORE} masternode status &> ${DPATH}PRXMN${nodeunit}.tmp
     if grep -q "Hot node, waiting for remote activation" ${DPATH}PRXMN${nodeunit}.tmp; then
@@ -1318,7 +1318,7 @@ esac
   DEV=$DEV+1
   #else
   #  if [ ! -z ${nodeunit} ]; then
-  # echo -e ${RED}"No Installation Found for Masternode ${nodeunit} - /mnt/blockstorage${COINl}${nodeunit}" ${CLEAR}
+  # echo -e ${RED}"No Installation Found for Masternode ${nodeunit} - /mnt/blockstorage/${COINl}${nodeunit}" ${CLEAR}
   #  fi
   fi
   echo
@@ -1389,12 +1389,12 @@ esac
   }
   #Firstnode Installation Check
   function_first_nodecheck(){
-        if [ -d /mnt/blockstorage${COINl} ]; then
-          echo -e ${GREEN}"Found ${COINl}-Oldnode Installation Found - /mnt/blockstorage${COINl}" ${CLEAR}
+        if [ -d /mnt/blockstorage/${COINl} ]; then
+          echo -e ${GREEN}"Found ${COINl}-Oldnode Installation Found - /mnt/blockstorage/${COINl}" ${CLEAR}
           #Test_Pause
         else
-          if [ -d /mnt/blockstorage${COINl}1 ]; then
-          echo -e ${GREEN}"Found ${COINl} Masternode Installation Found - /mnt/blockstorage${COINl}" ${CLEAR}
+          if [ -d /mnt/blockstorage/${COINl}1 ]; then
+          echo -e ${GREEN}"Found ${COINl} Masternode Installation Found - /mnt/blockstorage/${COINl}" ${CLEAR}
           #Test_Pause
         else
         #install FirstMasternode - Start!
@@ -1453,180 +1453,180 @@ esac
   ##Make Node configuration file
   Function_Build_Node_Directories(){
   echo -e "${GREEN}Configuring ${COIN} Masternode #${nodeunit} ${CLEAR}"
-  if [ ! -d /mnt/blockstorage${COINl}${nodeunit} ]; then
-      sudo mkdir /mnt/blockstorage${COINl}${nodeunit}
+  if [ ! -d /mnt/blockstorage/${COINl}${nodeunit} ]; then
+      sudo mkdir /mnt/blockstorage/${COINl}${nodeunit}
       #Test_Pause
-      #echo test mkdir /mnt/blockstorage${COINl}${nodeunit}
-  elif [ ! -d /mnt/blockstorage${COINl}${nodeunit}/.${COINl} ]; then
-      sudo mkdir /mnt/blockstorage${COINl}${nodeunit}/.${COINl}
+      #echo test mkdir /mnt/blockstorage/${COINl}${nodeunit}
+  elif [ ! -d /mnt/blockstorage/${COINl}${nodeunit}/.${COINl} ]; then
+      sudo mkdir /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}
       #Test_Pause
-      #echo test mkdir /mnt/blockstorage${COINl}${nodeunit}/.${COINl}
+      #echo test mkdir /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}
   fi
 }
   Function_Build_Node_Configuration(){
   Function_Build_Node_Directories
-  if [ ! -f /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG} ]; then
-  sudo touch /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "rpcuser=u3er"`shuf -i 100000-9999999 -n 1` >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "rpcpassword=pa55"`shuf -i 100000-9999999 -n 1` >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "rpcallowip=127.0.0.1" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  if [ ! -f /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG} ]; then
+  sudo touch /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "rpcuser=u3er"`shuf -i 100000-9999999 -n 1` >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "rpcpassword=pa55"`shuf -i 100000-9999999 -n 1` >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "rpcallowip=127.0.0.1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   Function_IP_Table_Check
   Function_Masternode_Key_Check
-  echo "server=1" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "daemon=1" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "maxconnections=10" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "masternode=1" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "server=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "daemon=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "maxconnections=10" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternode=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   RPCPORT=$(($COINRPCPORT+$nodeunit-1))
-  echo "rpcport=${RPCPORT}" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "rpcport=${RPCPORT}" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   if [[ $nodeunit -eq 1 ]] ; then
-    echo "listen=1" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-    echo "datacarrier=1" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    echo "listen=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    echo "datacarrier=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
   if [[ ! $nodeunit -eq 1 ]] ; then
-    echo "listen=0" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    echo "listen=0" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
   if [[ $nodeunit -eq 1 ]] ; then
-    echo "externalip=${MNIP1}:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+    echo "externalip=${MNIP1}:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 2 ]] ; then
-      echo "externalip=[${MNIP2}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP2}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 3 ]] ; then
-      echo "externalip=[${MNIP3}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP3}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 4 ]] ; then
-      echo "externalip=[${MNIP4}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP4}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 5 ]] ; then
-      echo "externalip=[${MNIP5}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP5}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 6 ]] ; then
-      echo "externalip=[${MNIP6}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP6}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 7 ]] ; then
-      echo "externalip=[${MNIP7}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP7}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 8 ]] ; then
-      echo "externalip=[${MNIP8}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP8}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 9 ]] ; then
-      echo "externalip=[${MNIP9}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP9}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 10 ]] ; then
-      echo "externalip=[${MNIP10}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP10}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 11 ]] ; then
-      echo "externalip=[${MNIP11}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP11}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 12 ]] ; then
-      echo "externalip=[${MNIP12}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP12}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 13 ]] ; then
-      echo "externalip=[${MNIP13}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP13}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 14 ]] ; then
-      echo "externalip=[${MNIP14}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP14}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 15 ]] ; then
-      echo "externalip=[${MNIP15}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP15}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 16 ]] ; then
-      echo "externalip=[${MNIP16}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP16}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 17 ]] ; then
-      echo "externalip=[${MNIP17}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP17}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 18 ]] ; then
-      echo "externalip=[${MNIP19}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP19}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 19 ]] ; then
-      echo "externalip=[${MNIP19}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP19}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 20 ]] ; then
-      echo "externalip=[${MNIP20}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP20}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 21 ]] ; then
-      echo "externalip=[${MNIP21}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP21}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 22 ]] ; then
-      echo "externalip=[${MNIP22}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP22}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 23 ]] ; then
-      echo "externalip=[${MNIP23}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP23}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 24 ]] ; then
-      echo "externalip=[${MNIP24}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP24}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 25 ]] ; then
-      echo "externalip=[${MNIP25}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP25}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 26 ]] ; then
-      echo "externalip=[${MNIP26}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP26}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 27 ]] ; then
-      echo "externalip=[${MNIP27}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP27}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 28 ]] ; then
-      echo "externalip=[${MNIP28}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP28}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 29 ]] ; then
-      echo "externalip=[${MNIP29}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP29}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
     elif [[ $nodeunit -eq 30 ]] ; then
-      echo "externalip=[${MNIP30}]:$COINPORT" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+      echo "externalip=[${MNIP30}]:$COINPORT" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
   if [[ $nodeunit -eq 1 ]] ; then
-  echo "masternodeprivkey=$PRIVK1" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 2 ]] ; then
-  echo "masternodeprivkey=$PRIVK2" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK2" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 3 ]] ; then
-  echo "masternodeprivkey=$PRIVK3" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK3" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 4 ]] ; then
-  echo "masternodeprivkey=$PRIVK4" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK4" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 5 ]] ; then
-  echo "masternodeprivkey=$PRIVK5" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK5" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 6 ]] ; then
-  echo "masternodeprivkey=$PRIVK6" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK6" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 7 ]] ; then
-  echo "masternodeprivkey=$PRIVK7" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK7" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 8 ]] ; then
-  echo "masternodeprivkey=$PRIVK8" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK8" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 9 ]] ; then
-  echo "masternodeprivkey=$PRIVK9" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK9" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 10 ]] ; then
-  echo "masternodeprivkey=$PRIVK10" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK10" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 11 ]] ; then
-  echo "masternodeprivkey=$PRIVK11" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK11" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 12 ]] ; then
-  echo "masternodeprivkey=$PRIVK12" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK12" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 13 ]] ; then
-  echo "masternodeprivkey=$PRIVK13" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK13" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 14 ]] ; then
-  echo "masternodeprivkey=$PRIVK14" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK14" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 15 ]] ; then
-  echo "masternodeprivkey=$PRIVK15" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK15" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 16 ]] ; then
-  echo "masternodeprivkey=$PRIVK16" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK16" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 17 ]] ; then
-  echo "masternodeprivkey=$PRIVK17" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK17" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 18 ]] ; then
-  echo "masternodeprivkey=$PRIVK18" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK18" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 19 ]] ; then
-  echo "masternodeprivkey=$PRIVK19" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK19" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 20 ]] ; then
-  echo "masternodeprivkey=$PRIVK20" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK20" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 21 ]] ; then
-  echo "masternodeprivkey=$PRIVK21" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK21" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 22 ]] ; then
-  echo "masternodeprivkey=$PRIVK22" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK22" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 23 ]] ; then
-  echo "masternodeprivkey=$PRIVK23" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK23" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 24 ]] ; then
-  echo "masternodeprivkey=$PRIVK24" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK24" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 25 ]] ; then
-  echo "masternodeprivkey=$PRIVK25" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK25" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 26 ]] ; then
-  echo "masternodeprivkey=$PRIVK26" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK26" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 27 ]] ; then
-  echo "masternodeprivkey=$PRIVK27" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK27" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 28 ]] ; then
-  echo "masternodeprivkey=$PRIVK28" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK28" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 29 ]] ; then
-  echo "masternodeprivkey=$PRIVK29" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK29" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   elif [[ $nodeunit -eq 30 ]] ; then
-  echo "masternodeprivkey=$PRIVK30" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "masternodeprivkey=$PRIVK30" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
   ###Add Nodes Updates if 1st node skip, otherwise add 1st node as add node
   if [[ $nodeunit -eq 1 ]] ; then
-  echo "addnode=$ADDNODE0" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE1" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE2" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE3" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE4" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE5" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE6" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE7" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE8" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE9" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE10" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE11" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "addnode=$ADDNODE12" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE0" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE2" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE3" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE4" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE5" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE6" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE7" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE8" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE9" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE10" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE11" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=$ADDNODE12" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   else
-  echo "addnode=${MNIP1}" >> /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "addnode=${MNIP1}" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   fi
 else
-  echo -e "Skipping -/mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}- Found!"
+  echo -e "Skipping -/mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}- Found!"
 fi
   }
   #testpoint 2 - not implimented
@@ -1668,7 +1668,7 @@ Function_Glances(){
   ## Start Launch First node
   launch_first_node(){
   echo -e ${BOLD}"Launching First ${COIN3} Node"${CLEAR}
-  ${COINDAEMON} -datadir=/mnt/blockstorage${COINl}1/.${COINl} -daemon
+  ${COINDAEMON} -datadir=/mnt/blockstorage/${COINl}1/.${COINl} -daemon
   sleep 1
     if [ -f /usr/local/nullentrydev/${COIN3l}.log ]; then
       sudo rm -rf /usr/local/nullentrydev/${COIN3l}.log
@@ -1689,13 +1689,13 @@ Function_Glances(){
   echo -e "${YELLOW}the other masternodes.  This will prevent all masternodes${CLEAR}"
   echo -e "${YELLOW}from downloading the block chain individually; taking up${CLEAR}"
   echo -e "${YELLOW}more time and resources.  Current Block count will be displayed below.${CLEAR}"
-  ${COINDAEMONCLI} -datadir=/mnt/blockstorage${COINl}${nodeunit}/${COINCORE} getblockcount
+  ${COINDAEMONCLI} -datadir=/mnt/blockstorage/${COINl}${nodeunit}/${COINCORE} getblockcount
   sleep 5
   #node 1 sync check
   #select proper isblocked sync'd syntax
-  #until ${COINDAEMONCLI} -datadir=/mnt/blockstorage${COINl}${nodeunit}/${COINCORE} mnsync status | grep -m 1 'IsBlockchainSynced" : true'; do
-  until ${COINDAEMONCLI} -datadir=/mnt/blockstorage${COINl}${nodeunit}/${COINCORE} mnsync status | grep -m 1 'IsBlockchainSynced": true'; do
-    ${COINDAEMONCLI} -datadir=/mnt/blockstorage${COINl}${nodeunit}/${COINCORE} getblockcount
+  #until ${COINDAEMONCLI} -datadir=/mnt/blockstorage/${COINl}${nodeunit}/${COINCORE} mnsync status | grep -m 1 'IsBlockchainSynced" : true'; do
+  until ${COINDAEMONCLI} -datadir=/mnt/blockstorage/${COINl}${nodeunit}/${COINCORE} mnsync status | grep -m 1 'IsBlockchainSynced": true'; do
+    ${COINDAEMONCLI} -datadir=/mnt/blockstorage/${COINl}${nodeunit}/${COINCORE} getblockcount
     sleep 5
   done
   #Test_Pause
@@ -1703,21 +1703,21 @@ Function_Glances(){
   ##End launch of first nodes
   ##Start of replicate nodes
   Function_Replicate_Node(){
-  if [ ! -f /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG} ]; then
+  if [ ! -f /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG} ]; then
   echo -e "${GREEN}Haulting and Replicating First ${COIN} Node${CLEAR}"
   echo
   sleep 2
   Function_Build_Node_Directories
   cd /
   sleep 2
-  sudo cp -r /mnt/blockstorage${COINl}1/.${COINl}/* /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/
-  sudo rm /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  sudo cp -r /mnt/blockstorage/${COINl}1/.${COINl}/* /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/
+  sudo rm /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
 #
-if [ -a /mnt/blockstorage${COINl}${nodeunit}/${COINCONFIG} ]; then
-  sudo cp -r /mnt/blockstorage${COINl}${nodeunit}/${COINCONFIG} /mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+if [ -a /mnt/blockstorage/${COINl}${nodeunit}/${COINCONFIG} ]; then
+  sudo cp -r /mnt/blockstorage/${COINl}${nodeunit}/${COINCONFIG} /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
 fi
 else
-  echo -e "Skipping -/mnt/blockstorage${COINl}${nodeunit}/.${COINl}/${COINCONFIG} Found!"
+  echo -e "Skipping -/mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG} Found!"
 fi
 #
   }
@@ -1951,7 +1951,7 @@ Function_Build_Masternode_Key_Table(){
     echo \#unless keys are entered in configuration directly.  >> ${DPATH}${COIN3l}mnkey.tbl
     count=0
     until [[ $count = 30 ]]; do
-    ${COINDAEMONCLI} -datadir=/mnt/blockstorage${COINl}1/.${COINl} masternode genkey >> ${DPATH}${COIN3l}mnkey.tbl
+    ${COINDAEMONCLI} -datadir=/mnt/blockstorage/${COINl}1/.${COINl} masternode genkey >> ${DPATH}${COIN3l}mnkey.tbl
     count=$[$count+1]
     done
     Function_Stop_Masternode
@@ -1996,7 +1996,7 @@ Function_Read_Masternode_Key_Table(){
   echo "${COINl}${nodeunit}user exists"
   #MN${nodeunit}=1
   else
-  sudo adduser --system --home /mnt/blockstorage${COINl}${nodeunit} ${COINl}${nodeunit}
+  sudo adduser --system --home /mnt/blockstorage/${COINl}${nodeunit} ${COINl}${nodeunit}
   #DEVMN${nodeunit}=0
   fi
   }
@@ -2012,14 +2012,14 @@ Function_Read_Masternode_Key_Table(){
   wget ${NEBootStrap}
   sleep 1
   if [ ! -d ${COINl}1/.${COINl} ]; then
-  echo "Making /mnt/blockstorage${COINl}1/.${COINl} "
-  sudo mkdir /mnt/blockstorage${COINl}1/.${COINl}
+  echo "Making /mnt/blockstorage/${COINl}1/.${COINl} "
+  sudo mkdir /mnt/blockstorage/${COINl}1/.${COINl}
   else
-  echo "Found /mnt/blockstorage${COINl}1/.${COINl} "
+  echo "Found /mnt/blockstorage/${COINl}1/.${COINl} "
   fi
   #add check before downloading
   sudo apt-get -y install unrar
-  unzip prx.zip -d /mnt/blockstorage${COINl}1/.${COINl}
+  unzip prx.zip -d /mnt/blockstorage/${COINl}1/.${COINl}
 #add hash Check
 #compare hash
   #Test_Pause
@@ -2041,40 +2041,40 @@ Function_Read_Masternode_Key_Table(){
     echo -e "#The Alias listed ${COIN3l}01 etc, are just suggestions and can be replaced"
     echo -e "${YELLOW}#If you have a problem seeing this expand your window, or copy while scrolling"
     echo -e ${GREEN}
-    if [ -f /mnt/blockstorage${COINl}1/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}1/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}01 ${MNIP1}:$COINPORT $PRIVK1 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}2/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}2/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}02 [${MNIP2}]:$COINPORT $PRIVK2 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}3/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}3/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}03 [${MNIP3}]:$COINPORT $PRIVK3 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}4/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}4/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}04 [${MNIP4}]:$COINPORT $PRIVK4 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}5/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}5/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}05 [${MNIP5}]:$COINPORT $PRIVK5 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}6/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}6/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}06 [${MNIP6}]:$COINPORT $PRIVK6 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}7/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}7/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}07 [${MNIP7}]:$COINPORT $PRIVK7 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}8/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}8/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}08 [${MNIP8}]:$COINPORT $PRIVK8 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}9/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}9/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}09 [${MNIP9}]:$COINPORT $PRIVK9 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}10/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}10/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}10 [${MNIP10}]:$COINPORT $PRIVK10 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}11/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}11/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}11 [${MNIP11}]:$COINPORT $PRIVK11 [Transaction ID] [Transaction Output]"
     fi
-    if [ -f /mnt/blockstorage${COINl}12/.${COINl}/${COINCONFIG} ]; then
+    if [ -f /mnt/blockstorage/${COINl}12/.${COINl}/${COINCONFIG} ]; then
       echo -e "${COIN3l}12 [${MNIP12}]:$COINPORT $PRIVK12 [Transaction ID] [Transaction Output]"
     fi
     echo
@@ -2083,7 +2083,7 @@ Function_Read_Masternode_Key_Table(){
 #testpoint
   Function_Install_Secondaries(){
     INSTALLEDMN=1
-    ${COINDAEMONCLI} -datadir=/mnt/blockstorage${COINl}1/${COINCORE} stop
+    ${COINDAEMONCLI} -datadir=/mnt/blockstorage/${COINl}1/${COINCORE} stop
     sleep 15
     echo
       until [[ $INSTALLAMOUNT = $INSTALLEDMN ]]; do
