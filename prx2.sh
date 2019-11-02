@@ -1887,7 +1887,6 @@ Function_Build_IP_Table(){
   echo \#unless IPs are entered in configuration directly.  >> ${DPATH}ip.tbl
   echo $(hostname -I | cut -f1 -d' ') >> ${DPATH}ip.tbl
   for i in {15362..15395}; do printf "${IP}:%.4x\n" $i >> ${DPATH}ip.tbl; done
-# for i in {15362..15375}; do printf "${IP}:%.4x\n" $i >> ${DPATH}ip.tbl; done  
   fi
 }
 #Reads IP Table for Masternodes; Storage Needed for Building & Adding Additional masternodes
