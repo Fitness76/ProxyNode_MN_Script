@@ -1943,7 +1943,7 @@ Function_Build_Masternode_Key_Table(){
     echo -e ${RED}"This Will take a moment"${CLEAR}
     nodeunit=1
     Function_Start_Masternode
-    sleep 180
+    sleep 240
     sudo touch ${DPATH}${COIN3l}mnkey.tbl
     echo \#If editing IP Table list them below.  Starting from masternode 1 to 10 > ${DPATH}${COIN3l}mnkey.tbl
     echo \Masternode needs to be rebuilt in order for these to take effect >> ${DPATH}${COIN3l}mnkey.tbl
