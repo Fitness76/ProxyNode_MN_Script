@@ -1470,6 +1470,7 @@ esac
   echo "rpcuser=u3er"`shuf -i 100000-9999999 -n 1` >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "rpcpassword=pa55"`shuf -i 100000-9999999 -n 1` >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "rpcallowip=127.0.0.1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  sleep 90
   Function_IP_Table_Check
   Function_Masternode_Key_Check
   echo "server=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
@@ -1669,7 +1670,7 @@ Function_Glances(){
   launch_first_node(){
   echo -e ${BOLD}"Launching First ${COIN3} Node"${CLEAR}
   ${COINDAEMON} -datadir=/mnt/blockstorage/${COINl}1/.${COINl} -daemon
-  sleep 120
+  sleep 30
     if [ -f /usr/local/nullentrydev/${COIN3l}.log ]; then
       sudo rm -rf /usr/local/nullentrydev/${COIN3l}.log
       sudo touch /usr/local/nullentrydev/${COIN3l}.log
