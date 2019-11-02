@@ -2018,7 +2018,7 @@ Function_Read_Masternode_Key_Table(){
   fi
   #add check before downloading
   sudo apt-get -y install unrar
-  unzip -d /root/prx.zip /mnt/blockstorage/${COINl}1/.${COINl}
+  unzip /root/prx.zip -d /mnt/blockstorage/${COINl}1/.${COINl}
 #add hash Check
 #compare hash
   #Test_Pause
