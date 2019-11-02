@@ -1759,6 +1759,19 @@ fi
     echo -e "10 - Masternode Ten"
     echo -e "11 - Masternode Eleven"
     echo -e "12 - Masternode Twelve"
+    echo -e "13 - Masternode Twelve"
+    echo -e "14 - Masternode Twelve"
+    echo -e "15 - Masternode Twelve"
+    echo -e "16 - Masternode Twelve"
+    echo -e "17 - Masternode Twelve"
+    echo -e "18 - Masternode Twelve"
+    echo -e "19 - Masternode Twelve"
+    echo -e "20 - Masternode Twelve"
+    echo -e "21 - Masternode Twelve"
+    echo -e "22 - Masternode Twelve"
+    echo -e "23 - Masternode Twelve"
+    echo -e "24 - Masternode Twelve"
+    echo -e "25 - Masternode Twelve"
     echo -e "B  - Back out of Menu"
     echo -e "X  - Exit"
     Function_Read_Masternode_Upgrade
@@ -1801,6 +1814,45 @@ fi
       Function_Install_Secondaries
       pause ;;
       12)INSTALLAMOUNT=12
+      Function_Install_Secondaries
+      pause ;;
+      13)INSTALLAMOUNT=13
+      Function_Install_Secondaries
+      pause ;;
+      14)INSTALLAMOUNT=14
+      Function_Install_Secondaries
+      pause ;;
+      15)INSTALLAMOUNT=15
+      Function_Install_Secondaries
+      pause ;;
+      16)INSTALLAMOUNT=16
+      Function_Install_Secondaries
+      pause ;;
+      17)INSTALLAMOUNT=17
+      Function_Install_Secondaries
+      pause ;;
+      18)INSTALLAMOUNT=18
+      Function_Install_Secondaries
+      pause ;;
+      19)INSTALLAMOUNT=19
+      Function_Install_Secondaries
+      pause ;;
+      20)INSTALLAMOUNT=20
+      Function_Install_Secondaries
+      pause ;;
+      21)INSTALLAMOUNT=21
+      Function_Install_Secondaries
+      pause ;;
+      22)INSTALLAMOUNT=22
+      Function_Install_Secondaries
+      pause ;;
+      23)INSTALLAMOUNT=23
+      Function_Install_Secondaries
+      pause ;;
+      24)INSTALLAMOUNT=24
+      Function_Install_Secondaries
+      pause ;;
+      25)INSTALLAMOUNT=25
       Function_Install_Secondaries
       pause ;;
       b) echo -e "backing out" ;;
