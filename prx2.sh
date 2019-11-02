@@ -47,7 +47,7 @@ COINFILES=prx-Linux-v2.1.0.zip
 #need DECOMPRESS
 DECOMPRESS='unzip'
 #rocketstrap
-NEBootStrap=/root/prx.zip
+NEBootStrap=prx.zip
 AddNodeList=http://nullentry.com/chain/PRX/addnodes.tbl
 ADDNODE0=66.42.113.222:12195
 ADDNODE1=107.191.50.119:12195
@@ -2008,7 +2008,7 @@ Function_Read_Masternode_Key_Table(){
   cd /root/${COIN3l}
   echo "Attempting to get Bootstrap, please wait"
   #Test_Pause
-  wget ${NEBootStrap}
+  # wget ${NEBootStrap}
   sleep 1
   if [ ! -d ${COINl}1/.${COINl} ]; then
   echo "Making /mnt/blockstorage/${COINl}1/.${COINl} "
