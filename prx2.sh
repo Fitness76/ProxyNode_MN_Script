@@ -1470,7 +1470,6 @@ esac
   echo "rpcuser=u3er"`shuf -i 100000-9999999 -n 1` >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "rpcpassword=pa55"`shuf -i 100000-9999999 -n 1` >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "rpcallowip=127.0.0.1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  sleep 90
   Function_IP_Table_Check
   Function_Masternode_Key_Check
   echo "server=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
@@ -1954,7 +1953,7 @@ Function_Build_Masternode_Key_Table(){
     ${COINDAEMONCLI} -datadir=/mnt/blockstorage/${COINl}1/.${COINl} masternode genkey >> ${DPATH}${COIN3l}mnkey.tbl
     count=$[$count+1]
     done
-    sleep 60
+    sleep 180
     Function_Stop_Masternode
     }
 
