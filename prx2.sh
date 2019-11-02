@@ -1669,7 +1669,7 @@ Function_Glances(){
   launch_first_node(){
   echo -e ${BOLD}"Launching First ${COIN3} Node"${CLEAR}
   ${COINDAEMON} -datadir=/mnt/blockstorage/${COINl}1/.${COINl} -daemon
-  sleep 1
+  sleep 60
     if [ -f /usr/local/nullentrydev/${COIN3l}.log ]; then
       sudo rm -rf /usr/local/nullentrydev/${COIN3l}.log
       sudo touch /usr/local/nullentrydev/${COIN3l}.log
