@@ -1769,19 +1769,19 @@ fi
     echo -e "10 - Masternode Ten"
     echo -e "11 - Masternode Eleven"
     echo -e "12 - Masternode Twelve"
-    echo -e "13 - Masternode Twelve"
-    echo -e "14 - Masternode Twelve"
-    echo -e "15 - Masternode Twelve"
-    echo -e "16 - Masternode Twelve"
-    echo -e "17 - Masternode Twelve"
-    echo -e "18 - Masternode Twelve"
-    echo -e "19 - Masternode Twelve"
-    echo -e "20 - Masternode Twelve"
-    echo -e "21 - Masternode Twelve"
-    echo -e "22 - Masternode Twelve"
-    echo -e "23 - Masternode Twelve"
-    echo -e "24 - Masternode Twelve"
-    echo -e "25 - Masternode Twelve"
+    echo -e "13 - Masternode 13"
+    echo -e "14 - Masternode 14"
+    echo -e "15 - Masternode 15"
+    echo -e "16 - Masternode 16"
+    echo -e "17 - Masternode 17"
+    echo -e "18 - Masternode 18"
+    echo -e "19 - Masternode 19"
+    echo -e "20 - Masternode 20"
+    echo -e "21 - Masternode 21"
+    echo -e "22 - Masternode 22"
+    echo -e "23 - Masternode 23"
+    echo -e "24 - Masternode 24"
+    echo -e "25 - Masternode 25"
     echo -e "B  - Back out of Menu"
     echo -e "X  - Exit"
     Function_Read_Masternode_Upgrade
@@ -2005,7 +2005,7 @@ Function_Build_Masternode_Key_Table(){
     echo -e ${RED}"This Will take a moment"${CLEAR}
     nodeunit=1
     Function_Start_Masternode
-    sleep 300
+    sleep 30
     sudo touch ${DPATH}${COIN3l}mnkey.tbl
     echo \#If editing IP Table list them below.  Starting from masternode 1 to 10 > ${DPATH}${COIN3l}mnkey.tbl
     echo \Masternode needs to be rebuilt in order for these to take effect >> ${DPATH}${COIN3l}mnkey.tbl
