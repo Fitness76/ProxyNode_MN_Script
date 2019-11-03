@@ -828,6 +828,12 @@ esac
   if [ -d /home/${COINl}17 ]; then
   echo -e "17 - Masternode 17"
   fi
+  if [ -d /home/${COINl}18 ]; then
+  echo -e "18 - Masternode 18"
+  fi
+  if [ -d /home/${COINl}19 ]; then
+  echo -e "19 - Masternode 19"
+  fi
   if [ -d /home/${COINl}0 ]; then
   echo -e "0 - Masternode Zero"
   fi
@@ -878,6 +884,10 @@ esac
     16) nodeunit=16
     Function_Stop_Masternode ;;
     17) nodeunit=17
+    Function_Stop_Masternode ;;
+    18) nodeunit=18
+    Function_Stop_Masternode ;;
+    18) nodeunit=19
     Function_Stop_Masternode ;;
     0) nodeunit=0
     Function_Stop_Masternode ;;
@@ -2001,7 +2011,7 @@ Function_Build_Masternode_Key_Table(){
     echo \Masternode needs to be rebuilt in order for these to take effect >> ${DPATH}${COIN3l}mnkey.tbl
     echo \#unless keys are entered in configuration directly.  >> ${DPATH}${COIN3l}mnkey.tbl
     count=0
-    until [[ $count = 30 ]]; do
+    until [[ $count = 31 ]]; do
     ${COINDAEMONCLI} -datadir=/home/${COINl}1/.${COINl} masternode genkey >> ${DPATH}${COIN3l}mnkey.tbl
     count=$[$count+1]
     done
