@@ -1474,7 +1474,7 @@ esac
   Function_Masternode_Key_Check
   echo "server=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "daemon=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
-  echo "maxconnections=10" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
+  echo "maxconnections=7" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   echo "masternode=1" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
   RPCPORT=$(($COINRPCPORT+$nodeunit-1))
   echo "rpcport=${RPCPORT}" >> /mnt/blockstorage/${COINl}${nodeunit}/.${COINl}/${COINCONFIG}
